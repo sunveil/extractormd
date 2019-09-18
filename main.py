@@ -14,7 +14,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('path', help='input folder for processing')
     args = parser.parse_args()
-    root_dir = args.folder
+    root_dir = args.path
     is_dir = os.path.isdir(root_dir)
     if not is_dir:
         raise Exception('It is not a directory')
