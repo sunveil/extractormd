@@ -31,8 +31,8 @@ def extract_from_file(path):
 
 def check_path(path):
     regex = r"/\w+/(DATA(_|-)(IACT)/(\d{4}-\d{2})/(\w{5})/(\d{6}.?\d*.?\w*)/(\w{3}\d{2})/(\w*.?\w*))"
-    pattern = re.compile(path)
-    m = pattern.match(pattern)
+    pattern = re.compile(regex)
+    m = pattern.match(path)
     if m:
         return True
     return False

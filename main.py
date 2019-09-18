@@ -10,6 +10,9 @@ __REGEXP = r"/\w+/(DATA(_|-)(IACT)/(\d{4}-\d{2})/(\w{5})/(\d{6}.?\d*.?\w*)/(\w{3
 
 
 def main():
+    path = "/k2/DATA_IACT/2016-17/dec16/011216/BSM05/010101.01"
+    if extractor.check_path(path):
+        print(path)
 
     parser = argparse.ArgumentParser()
     parser.add_argument('path', help='input folder for processing')
