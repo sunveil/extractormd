@@ -62,7 +62,7 @@ def __extract_run_date(path):
     path_list.reverse()
     run = path_list[__RUN_DATE]
     run_date = run.split(".")[0]
-    date_time = datetime.strptime(run_date, "%m%d%y").strftime("%Y-%m-%dT%H:%M:%S")
+    date_time = datetime.strptime(run_date, "%d%m%y").strftime("%Y-%m-%dT%H:%M:%S")
     return date_time
 
 
