@@ -25,7 +25,7 @@ def extract_from_file(path):
         'period_id': period_id,
         'run_id': run_id,
         'cluster_id': cluster_id,
-        'flags': 0
+        'flags': "00000000"
     }
 
 
@@ -42,7 +42,7 @@ def __get_sha1(path):
     # f = open(path)
     # read = f.read()
     # return hashlib.sha1(read)
-    return "sha1"
+    return "da39a3ee5e6b4b0d3255bfef95601890afd80709"
 
 
 def __extract_cluster(path):
